@@ -7,7 +7,7 @@ root.title("Transparent PNG Overlay")
 root.geometry("1024x600")
 
 # Load the PNG image with transparency
-image = Image.open("BG.png")  # Replace with your PNG file
+image = Image.open("DriverSupervisor/BG.png")  # Replace with your PNG file
 image = image.resize((1024, 600), Image.Resampling.LANCZOS)  # Resize if needed
 tk_image = ImageTk.PhotoImage(image)
 
