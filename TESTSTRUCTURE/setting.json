@@ -1,0 +1,8 @@
+{
+    "frameRes":{"w":1020,"h":600},
+    "mediapipeCompress":1,
+    "keyMap":{
+        "quit":"q",
+        "viewMode":"v"
+    }
+}
