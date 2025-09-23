@@ -1,0 +1,13 @@
+{
+    "frameRes":{"w":1020,"h":600},
+    "mediapipe":{
+        "compress":1,
+        "detectionConfident":0.22,
+        "trackingConfident":0.78,
+        "maxFaces":1
+    },
+    "keyMap":{
+        "quit":"q",
+        "viewMode":"v"
+    }
+}
