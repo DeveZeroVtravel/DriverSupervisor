@@ -1,7 +1,5 @@
 import mediapipe as mp
-import json
-
-with open("TESTSTRUCTURE/setting.json","r",encoding="utf-8")as f: setting=json.load(f)
+from IData import setting
 
 mp_face_mesh=mp.solutions.face_mesh
 faceMesh=mp_face_mesh.FaceMesh(

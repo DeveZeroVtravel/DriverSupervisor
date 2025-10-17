@@ -9,5 +9,14 @@
     "keyMap":{
         "quit":"q",
         "viewMode":"v"
+    },
+    "Adjustment":{
+        "AvgEAR":4,
+        "ThreshEAR":0.22,
+        "DurEAR":5,
+
+        "AvgMOUTH":4,
+        "ThreshMOUTH":0.4,
+        "DurMOUTH":18
     }
 }

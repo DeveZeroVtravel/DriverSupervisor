@@ -1,10 +1,9 @@
 import cv2
 import threading
-import json
+from IData import setting
 from picamera2 import Picamera2
 
 #----ReadSettingConfig----
-with open("TESTSTRUCTURE/setting.json","r",encoding="utf-8")as f: setting=json.load(f)
 w=setting["frameRes"]["w"]
 h=setting["frameRes"]["h"]
 
