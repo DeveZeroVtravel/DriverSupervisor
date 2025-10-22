@@ -9,6 +9,7 @@ from RenderLMK import render
 from AspRat import AspectRatio as AR
 from collections import deque
 from IData import setting
+from HeadEst import estHeadPose
 
 w=setting["frameRes"]["w"]
 h=setting["frameRes"]["h"]
@@ -67,9 +68,9 @@ while True:
                 if openFrames>=DurMOUTH:
                     yawnCount+=1
                 openFrames=0
-
+    yaw, pitch,roll, p1, p2= estHeadPose(frame,result)
     if viewMode==True:
-        frame=render(frame,result,LandmarksList.selectPoint,(0,255,0),1,-1)
+        frame=render(frame,result,LandmarksList.selectPoint,p1,p2,(0,255,0),1,-1)
         
     cv2.putText(frame, f"FPS:{fps:.2f}",(10,20),cv2.FONT_HERSHEY_SIMPLEX,0.6,(0,255,0),2)
     cv2.putText(frame, f"BLINK:{blinkCount}",(10,555),cv2.FONT_HERSHEY_SIMPLEX,0.6,(0,255,0),2)
